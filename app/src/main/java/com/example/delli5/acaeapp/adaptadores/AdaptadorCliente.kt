@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.delli5.acaeapp.R
 
-class AdaptadorCliente(private val lista:ArrayList<ClienteModel>):RecyclerView.Adapter<AdaptadorCliente.MyViewHolder>() {
+class AdaptadorCliente(private val lista:ArrayList<ClienteModel>?):RecyclerView.Adapter<AdaptadorCliente.MyViewHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): AdaptadorCliente.MyViewHolder {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
