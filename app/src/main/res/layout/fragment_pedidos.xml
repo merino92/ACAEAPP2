@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".pedidos">
+
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+   android:text="# de Pedido"
+    android:padding="5dp"
+   />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+    >
+
+
+        <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:clickable="true"
+                android:elevation="10dp"
+                tools:elevation="5dp"
+                 tools:clickable="true">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="0dp"
+                          android:layout_margin="0dp"
+            >
+
+                <ImageView android:layout_width="80dp"
+                           android:layout_height="70dp"
+                           android:src="@drawable/cleinte"
+
+                />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+
+                              android:orientation="horizontal"
+                                android:gravity="center">
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="Nombre del cliente"
+                            android:textAlignment="center" android:fontFamily="@font/roboto_medium"
+                            android:textSize="18sp" android:textStyle="bold" android:textColor="@color/boton"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
